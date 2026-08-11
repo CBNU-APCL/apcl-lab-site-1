@@ -60,14 +60,26 @@ bundle exec jekyll serve
 ## 5. 최초 커스터마이징 체크리스트
 
 - [ ] `_config.yml` — 이메일, 주소, `gmap_query`(지도 검색어) 실제 정보로 수정
-- [ ] `_config.yml` — `home_video_file` 또는 `home_video_youtube_id`에 추력기 영상 연결
-      (직접 업로드 영상은 `assets/videos/`에 넣고 파일 크기가 너무 크지 않게 압축 권장,
-      용량이 크면 유튜브 비공개/일부공개 업로드 후 `home_video_youtube_id` 사용 추천)
-- [ ] `research.md` — 실제 연구 분야로 문구 교체
+- [ ] `_config.yml` — `home_hero_gif`(GIF) / `home_video_file`(mp4) / `home_video_youtube_id`(유튜브) 중
+      하나에 추력기 영상·움짤 연결 (우선순위: GIF > mp4 > 유튜브)
+- [ ] `research.md` — 실제 연구 분야 문구로 교체, `assets/images/research/`에 같은 파일명으로 사진 추가
 - [ ] `_data/members.yml` — 실제 교수님/학생 정보로 교체, 사진 업로드
 - [ ] `_data/publications.yml` — 실제 논문/특허 목록으로 교체
-- [ ] `news.md` — 예시 소식 삭제 후 실제 소식으로 교체
+- [ ] `_data/news.yml` — 예시 소식 삭제 후 실제 소식으로 교체
 - [ ] `assets/images/members/professor.jpg` 등 실제 사진 업로드 (없으면 사진 영역이 비어 보입니다)
+
+## 6. 커스텀 도메인 연결 시 baseurl 되돌리기 (중요)
+
+개발 중 `https://<계정>.github.io/<저장소이름>/` 임시 주소로 미리보기하려면 `_config.yml`의
+`baseurl`을 `"/저장소이름"`으로 설정해야 링크가 정상 동작합니다. 하지만 **실제 커스텀 도메인
+(`apcl.chungbuk.ac.kr`)을 연결한 뒤에는 `baseurl`을 반드시 빈 문자열로 되돌려야** 합니다.
+
+```yaml
+url: "https://apcl.chungbuk.ac.kr"
+baseurl: ""
+```
+
+커스텀 도메인은 루트(`/`)로 바로 서비스되기 때문에, `baseurl`이 남아있으면 반대로 모든 링크가 깨집니다.
 
 ## 폴더 구조
 
@@ -76,20 +88,23 @@ apcl-lab-site/
 ├── _config.yml              # 사이트 전역 설정 (관리자용)
 ├── _data/
 │   ├── members.yml          # 구성원 명단 (후배 수정)
-│   └── publications.yml     # 논문/특허/학술대회 (후배 수정)
+│   ├── publications.yml     # 논문/특허/학술대회 (후배 수정)
+│   └── news.yml              # News & Gallery 소식 (후배 수정)
 ├── _layouts/default.html    # 공통 레이아웃
 ├── _includes/                # 네비게이션, 푸터, 시그니처 SVG
 ├── assets/
 │   ├── css/style.css
-│   ├── js/main.js
+│   ├── js/main.js             # 탭/검색/페이지네이션/모달 로직 포함
 │   ├── images/members/       # 구성원 사진
 │   ├── images/news/          # 소식 사진
+│   ├── images/research/      # Research 카드 이미지 (관리자용)
+│   ├── images/hero/           # 홈 화면 GIF (관리자용)
 │   └── videos/                # 홈 배경 영상 (선택)
 ├── index.md                  # Home
 ├── research.md                # Research Interests (관리자 수정)
-├── news.md                    # News & Gallery (후배 수정)
-├── members.md                 # Members 페이지 틀 (yml 데이터를 렌더링)
-├── publications.md            # Publications 페이지 틀 (yml 데이터를 렌더링)
+├── members.md                 # Members 페이지 틀 (교수/재학생/졸업생 탭)
+├── publications.md            # Publications 페이지 틀 (탭+검색+페이지네이션)
+├── news.md                    # News & Gallery 페이지 틀 (검색+페이지네이션+상세보기)
 ├── contact.md                 # Contact
 ├── CNAME                      # 커스텀 도메인
 └── README_수정방법.md         # 후배용 한글 가이드

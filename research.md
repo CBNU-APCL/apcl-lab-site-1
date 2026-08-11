@@ -4,56 +4,84 @@ title: Research Interests
 permalink: /research/
 ---
 
-<section class="section wrap" style="border-bottom:none; padding-bottom:0;">
+<section class="section wrap research-intro" style="border-bottom:none; padding-bottom:0;">
   <div class="section-head">
     <span class="section-eyebrow">Research Interests</span>
     <h2>연구 분야</h2>
     <p class="section-sub">
-      APCL은 고체·액체 추진기관의 연소 현상을 시험 계측과 수치해석 양면에서 다루는 연구실입니다.
-      각 연구 카드는 대표 이미지를 함께 넣을 수 있도록 구성했습니다.
+      APCL은 충북대학교 기계공학부 소속 연구실로, 액체로켓 엔진과 가스터빈을 비롯한 다양한 추진장치의 분사, 연소, 열유동 현상을 연구합니다. 주요 연구 분야는 분사기 설계 및 제작, 첨단 분무 및 미립화 계측, 연소불안정 해석, 메탄 연소시험입니다.
+    </p>
+    <p class="section-sub">
+      본 연구실은 동축 와류형, 전단형, 핀틀형 등 다양한 분사기의 성능을 실험과 수치해석으로 평가하고, 금속 3D 프린팅 기반 제작 기술과 정밀 계측 기법을 활용하여 차세대 우주항공 추진 시스템 개발에 기여하고 있습니다.
     </p>
   </div>
 </section>
 
 {% include thrust-divider.html %}
 
-<section class="section wrap">
-  <div class="research-grid research-grid-visual">
-    <div class="research-card">
-      <img class="research-thumb" src="{{ '/assets/images/research/combustion-test.jpg' | relative_url }}" alt="추력기 연소시험 이미지" onerror="this.style.display='none'">
+<section class="section wrap research-feature-list">
+  <article class="research-feature" id="injector-design">
+    <div class="research-feature-media">
+      <img src="{{ '/assets/images/research/RI-1.png' | relative_url }}" alt="분사기 설계 및 제작" onerror="this.style.display='none'">
+    </div>
+    <div class="research-feature-body">
       <span class="idx">01</span>
-      <h3>추력기 연소시험 및 성능평가</h3>
-      <p>고체 추진기관(모터) 및 액체/하이브리드 추진기관의 지상 연소시험을 설계·수행하고, 추력 곡선, 비추력, 연소 효율 등 핵심 성능 지표를 분석합니다.</p>
+      <h3>분사기 설계 및 제작</h3>
+      <p>
+        동축 와류형, 전단형, 핀틀형 분사기 등 다양한 추진장치용 분사기를 설계하고 제작합니다. 리세스 길이, 오리피스 형상, 내부 유로 구조 등 주요 설계 변수가 분무 특성, 연소 성능, 안정성에 미치는 영향을 분석합니다.
+      </p>
+      <p>
+        금속 3D 프린팅 등 적층제조 기술을 활용하여 복잡한 내부 구조를 가진 분사기를 신속하게 제작하고, 실험 결과를 바탕으로 분사기 형상과 운용 조건을 최적화합니다.
+      </p>
     </div>
-    <div class="research-card">
-      <img class="research-thumb" src="{{ '/assets/images/research/instability.jpg' | relative_url }}" alt="연소 불안정성 계측 이미지" onerror="this.style.display='none'">
+  </article>
+
+  <article class="research-feature" id="spray-atomization">
+    <div class="research-feature-media">
+      <img src="{{ '/assets/images/research/RI-2.gif' | relative_url }}" alt="첨단 분무 및 미립화 연구" onerror="this.style.display='none'">
+    </div>
+    <div class="research-feature-body">
       <span class="idx">02</span>
-      <h3>연소 불안정성 진단 및 제어</h3>
-      <p>연소장의 압력 진동과 화염 모드를 고속 압력 센서로 계측하여 연소 불안정성 발생 메커니즘을 규명하고, 배플·감쇠기 기반 제어 기법을 연구합니다.</p>
+      <h3>첨단 분무 및 미립화 연구</h3>
+      <p>
+        분사기에서 발생하는 분무각, 액적 크기 분포, 분무 패턴, 액막 병합 및 분열 현상을 정밀하게 계측합니다. Phase Doppler Particle Analyzer(PDPA), 고속 카메라, 이미지 프로세싱을 활용하여 미세 액적의 속도와 크기를 분석합니다.
+      </p>
+      <p>
+        내부 유동 변화, 가스 주입, 이중와류동축 분사기에서의 2상 유동 전이와 분무 불안정성 등을 실험 및 수치해석적으로 연구합니다.
+      </p>
     </div>
-    <div class="research-card">
-      <img class="research-thumb" src="{{ '/assets/images/research/green-propellant.jpg' | relative_url }}" alt="친환경 추진제 이미지" onerror="this.style.display='none'">
+  </article>
+
+  <article class="research-feature" id="combustion-instability">
+    <div class="research-feature-media">
+      <img src="{{ '/assets/images/research/RI-3.gif' | relative_url }}" alt="연소불안정 연구" onerror="this.style.display='none'">
+    </div>
+    <div class="research-feature-body">
       <span class="idx">03</span>
-      <h3>친환경 추진제 개발</h3>
-      <p>기존 추진제 대비 독성·환경 부담을 낮춘 차세대 고체/하이브리드 추진제 배합을 연구하고, 소형 시편 연소시험을 통해 연소 특성을 검증합니다.</p>
+      <h3>연소불안정 연구</h3>
+      <p>
+        연소실 내부에서 발생하는 압력 섭동, 음향-유동 결합, 화염 구조 변화, 자기-맥동 현상 등을 실험적 및 이론적으로 분석합니다. 연소불안정의 발생 메커니즘을 파악하고, 분사기 및 연소실 설계 관점에서 안정화 방안을 연구합니다.
+      </p>
+      <p>
+        고속 압력 계측과 화염 가시화 결과를 함께 분석하여 연소 동특성과 불안정 모드의 상관관계를 규명합니다.
+      </p>
     </div>
-    <div class="research-card">
-      <img class="research-thumb" src="{{ '/assets/images/research/cfd.jpg' | relative_url }}" alt="CFD 해석 이미지" onerror="this.style.display='none'">
+  </article>
+
+  <article class="research-feature" id="methane-combustion-test">
+    <div class="research-feature-media">
+      <img src="{{ '/assets/images/research/RI-4.gif' | relative_url }}" alt="메탄 연소시험" onerror="this.style.display='none'">
+    </div>
+    <div class="research-feature-body">
       <span class="idx">04</span>
-      <h3>전산유체역학(CFD) 기반 연소장 해석</h3>
-      <p>추진기관 내부 유동과 연소장을 수치적으로 모사하여 실험으로 관찰하기 어려운 내부 구조와 열 거동을 분석하고 실험 결과와 상호 검증합니다.</p>
+      <h3>메탄 연소시험</h3>
+      <p>
+        메탄 연소시험 설비를 구축하여 연구실에서 설계한 분사기와 노즐의 성능을 평가합니다. 연소압, 추력, 분사 조건, 혼합 특성 등 핵심 운용 변수를 계측하고, 메탄 추진 시스템의 연소 안정성과 성능을 분석합니다.
+      </p>
+      <p>
+        메탄은 재사용 발사체와 차세대 우주추진 시스템에서 중요성이 커지고 있는 추진제입니다. APCL은 실험 설비 구축, 분사기 설계, 연소시험 데이터 분석을 연계하여 메탄 기반 추진장치 개발에 필요한 기반 기술을 축적하고 있습니다.
+      </p>
     </div>
-    <div class="research-card">
-      <img class="research-thumb" src="{{ '/assets/images/research/acoustics.jpg' | relative_url }}" alt="초음속 연소 이미지" onerror="this.style.display='none'">
-      <span class="idx">05</span>
-      <h3>초음속 연소 &amp; 흡입식 추진</h3>
-      <p>고속 유동 환경에서의 연소 안정성 및 열전달 메커니즘을 연구하며, 차세대 공기흡입식 추진기관 개발을 위한 기초 연구를 수행합니다.</p>
-    </div>
-    <div class="research-card">
-      <img class="research-thumb" src="{{ '/assets/images/research/instrumentation.jpg' | relative_url }}" alt="센서 계측 시스템 이미지" onerror="this.style.display='none'">
-      <span class="idx">06</span>
-      <h3>센서 &amp; 계측 시스템 개발</h3>
-      <p>고온·고압 연소 환경에서 사용 가능한 압력/온도/열전달 계측 시스템을 개발하여 정밀한 연소시험 데이터 확보 역량을 높입니다.</p>
-    </div>
-  </div>
+  </article>
+
 </section>

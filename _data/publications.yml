@@ -1,45 +1,1511 @@
 # =====================================================
-# publications.yml — 논문 / 특허 / 학술대회 발표 목록
-# 이 파일은 후배님들이 직접 수정하는 파일입니다.
-# 각 항목 아래 예시를 복사해서 year(연도), title(제목), authors(저자),
-# venue(학술지/발표처) 등을 바꿔주시면 됩니다.
-# 최신 연구가 위쪽에 오도록 순서대로 추가해주세요 (자동 정렬되지 않습니다).
+# publications.yml - papers, patents, and conference presentations
+# Optional fields:
+# - title_kr/title_en: Korean and English titles for domestic papers
+# - url: title click target for domestic, international, and conference items
+# - doi: DOI text or DOI URL, shown only when present
 # =====================================================
 
 # 국내논문
 domestic:
   - year: 2026
-    title: "고체 로켓 모터의 연소 불안정성 억제를 위한 배플 설계 연구"
-    authors: "김철수, 홍길동"
-    venue: "한국추진공학회지, 30(2), pp.12-20"
+    title_kr: "이원추진제 추력기 개발 동향에 대한 종합적 검토"
+    title_en: "Comprehensive Review of Development Trends in Bipropellant Thrusters"
+    authors: "Changyoung Oh, Hadong Jung, Seunghyeon Lee, Kyubok Ahn"
+    venue: "한국항공우주학회지, 54(1), p.73"
+    url: "https://doi.org/10.5139/JKSAS.2026.54.1.73"
 
   - year: 2025
-    title: "하이브리드 로켓 추진제 배합비에 따른 연소 특성 실험 연구"
-    authors: "이영희, 홍길동"
-    venue: "한국항공우주학회지, 53(4), pp.301-310"
+    title_kr: "기체 메탄/산소 동축 분사기 형상에 따른 단일분사기 연소기의 연소 및 열전달 특성"
+    title_en: "Combustion and Heat Transfer Characteristics of Single Injector Thrust Chamber with Different Gaseous Methane/Oxygen Coaxial Injector Geometries"
+    authors: "Jinhee Jang, Cheolwoong Kang, Hadong Jung, Kyubok Ahn"
+    venue: "한국항공우주학회지, 53(1), p.53"
+    url: "https://doi.org/10.5139/JKSAS.2025.53.1.53"
+
+  - year: 2023
+    title_kr: "가스터빈 연소기에서 스월 수와 연소실 길이에 따른 연소불안정 특성"
+    title_en: "Combustion Instability Characteristics according to Swirl Number and Combustion Chamber Length in a Gas Turbine Combustor"
+    authors: "Sunwoo Han, Shinwoo Lee, Donghyun Hwang, Kyubok Ahn"
+    venue: "한국연소학회지, 28(1), p.9"
+    url: "http://dx.doi.org/10.15231/jksc.2023.28.1.009"
+
+  - year: 2023
+    title_kr: "팽창기 사이클 엔진에 대한 검토 및 개발 동향"
+    title_en: "Review and Development Trends for Expander Cycle Engine"
+    authors: "Dongwoo Choi, Kyubok Ahn"
+    venue: "한국추진공학회지, 27(2), p.60"
+    url: "https://doi.org/10.6108/kspe.2023.27.2.060"
+
+  - year: 2023
+    title_kr: "연속 추력제어 연소시험을 위한 단계별 시험들"
+    title_en: "Step-by-step Tests for Continuous Thrust Control Hot-firing Test"
+    authors: "Cheolwoong Kang, Shinwoo Lee, Sunwoo Han, Kangyeong Lee, Hadong Jung, Dong‐Woo Choi, Kyubok Ahn"
+    venue: "한국추진공학회지, 27(1), p.58"
+    url: "https://doi.org/10.6108/kspe.2023.27.1.058"
+
+  - year: 2023
+    title_kr: "Phase Doppler Particle Analyzer를 이용한 기체주입식 와류형 분사기 연구"
+    title_en: "Study on Effervescent Swirl Injector Using Phase Doppler Particle Analyzer"
+    authors: "Kangyeong Lee, Hadong Jung, Kyubok Ahn"
+    venue: "산업과학기술논문집, 37(1)"
+    url: "https://doi.org/10.54726/jisti.37.1.1"
+
+  - year: 2022
+    title_kr: "가변추력 핀틀 분사기의 고압 분무 및 연소특성"
+    title_en: "High Pressure Spray and Combustion Characteristics of Throttleable Pintle Injector"
+    authors: "Dae Hwan Kim, Subeom Heo, Inho Kim, Donghyun Hwang, Cheolwoong Kang, Shinwoo Lee, Kyubok Ahn, Youngbin Yoon"
+    venue: "한국추진공학회지, 26(2), p.60"
+    url: "https://doi.org/10.6108/kspe.2022.26.2.060"
+
+  - year: 2022
+    title_kr: "가스터빈 연소기 모사 조건에서의 Jet A-1 코킹시험"
+    title_en: "Jet A-1 Coking Tests under Conditions Simulating Gas Turbine Combustor"
+    authors: "Dain Lee, Kangyeong Lee, Sunwoo Han, Kyubok Ahn, Gyong Won Ryu"
+    venue: "한국추진공학회지, 26(1), p.1"
+    url: "https://doi.org/10.6108/kspe.2022.26.1.001"
+
+  - year: 2022
+    title_kr: "적층제조 와류동축형 분사기 리세스 길이에 따른 분무특성"
+    title_en: "Spray Characteristics of Additive Manufactured Swirl Coaxial Injectors with Different Recess Lengths"
+    authors: "Jonghyeon Ahn, Ha Young Lim, Kyubok Ahn"
+    venue: "한국추진공학회지, 26(1), p.47"
+    url: "https://doi.org/10.6108/kspe.2022.26.1.047"
+
+  - year: 2021
+    title_kr: "액체로켓 메탄엔진 개발동향 및 시사점"
+    title_en: "Development Trends of Liquid Methane Rocket Engine and Implications"
+    authors: "Byoungjik Lim, Cheulwoong Kim, Keum‐Oh Lee, Keejoo Lee, Jae-Sung Park, Kyubok Ahn, Hyuck-Joon Namkoung, Youngbin Yoon"
+    venue: "한국추진공학회지, 25(2), p.119"
+    url: "https://doi.org/10.6108/kspe.2021.25.2.119"
+
+  - year: 2021
+    title_kr: "메탄엔진 연소시험설비 구축 및 예비 시험들"
+    title_en: "Methane Engine Combustion Test Facility Construction and Preliminary Tests"
+    authors: "Cheolwoong Kang, Donghyun Hwang, Jonghyeon Ahn, Junseo Lee, Dain Lee, Kyubok Ahn"
+    venue: "한국추진공학회지, 25(3), p.89"
+    url: "https://doi.org/10.6108/kspe.2021.25.3.089"
+
+  - year: 2021
+    title_kr: "액체/액체 핀틀 분사기의 개도에 따른 분무특성 연구"
+    title_en: "Study on the Spray Characteristics of Liquid/Liquid Pintle Injector by Opening Distance"
+    authors: "Wonjae Yoon, Jonghyeon Ahn, Kyubok Ahn, Hosung Yoon"
+    venue: "한국추진공학회지, 25(3), p.14"
+    url: "https://doi.org/10.6108/kspe.2021.25.3.014"
+
+  - year: 2021
+    title_kr: "전단동축형 분사기들의 미립화 특성에 대한 연구"
+    title_en: "Study on Atomization Characteristics of Shear Coaxial Injectors"
+    authors: "Ahn Jonghyeon, Keunseok Lee, Kyubok Ahn"
+    venue: "한국분무공학회지, 26(1), pp.9-17"
+    url: "https://doi.org/10.15435/JILASSKR.2021.26.1.9"
+
+  - year: 2020
+    title_kr: "동축 와류형 분사기의 연소안정성에 대한 분사기 리세스 및 연소실 길이의 영향"
+    title_en: "Effects of Injector Recess and Combustion Chamber Length on Combustion Stability of Swirl Coaxial Injectors"
+    authors: "Sujin Bak, Donghyun Hwang, Kyubok Ahn, Youngbin Yoon"
+    venue: "한국추진공학회지, 24(1), pp.24-33"
+    url: "https://doi.org/10.6108/KSPE.2020.24.1.024"
+
+  - year: 2020
+    title_kr: "Jet A-1 연료의 열전달 특성에 관한 실험적 연구"
+    title_en: "Experimental Study on Heat Transfer Characteristics of Jet A-1 Fuel"
+    authors: "Junseo Lee, Bom Lee, Kyubok Ahn"
+    venue: "한국추진공학회지, 24(5), pp.1-12"
+    url: "https://doi.org/10.6108/KSPE.2020.24.5.001"
+
+  - year: 2020
+    title_kr: "케로신 연료 및 코킹에 대한 검토"
+    title_en: "Review on Kerosene Fuel and Coking"
+    authors: "Lee JunSeo, Kyubok Ahn"
+    venue: "한국추진공학회지, 24(3), pp.81-124"
+    url: "https://doi.org/10.6108/KSPE.2020.24.3.081"
+
+  - year: 2020
+    title_kr: "스월-안정화 연소기에서 화염구조와 연소불안정에 대한 연구"
+    title_en: "Study on Flame Structure and Combustion Instability in a Swirl-Stabilized Combustor"
+    authors: "Donghyun Hwang, Sujin Bak, Kyubok Ahn"
+    venue: "한국연소학회지, 25(2), pp.1-10"
+    url: "https://doi.org/10.15231/jksc.2020.25.2.001"
+
+  - year: 2020
+    title_kr: "전단동축형 분사기의 유량계수에 대한 형상학적 변수들의 영향"
+    title_en: "Effect of Geometrical Parameters on Discharge Coefficients of a Shear Coaxial Injector"
+    authors: "Jonghyeon Ahn, Keunseok Lee, Kyubok Ahn"
+    venue: "한국분무공학회지, 25(3), pp.95-102"
+    url: "https://doi.org/10.15435/JILASSKR.2020.25.3.95"
+
+  - year: 2019
+    title_kr: "기체메탄/기체산소 이중 와류동축형 분사기의 화염구조 및 연소동특성"
+    title_en: "Flame Structure and Combustion Dynamic Characteristics of GCH4/GO2 in Bi-Swirl Coaxial Injectors"
+    authors: "Sujin Bak, Donghyun Hwang, Kyubok Ahn, Youngbin Yoon"
+    venue: "한국추진공학회지, 23(6), p.28"
+    url: "https://doi.org/10.6108/kspe.2019.23.6.028"
+
+  - year: 2019
+    title_kr: "기체메탄/기체산소 추진제를 이용한 이중 와류동축형 분사기의 예비 연소시험"
+    title_en: "Preliminary Combustion Tests in Bi-Swirl Coaxial Injectors Using Gaseous Methane/Gaseous Oxygen Propellants"
+    authors: "Donghyun Hwang, Sujin Bak, Kyubok Ahn"
+    venue: "한국추진공학회지, 23(4), p.70"
+    url: "https://doi.org/10.6108/kspe.2019.23.4.070"
+
+  - year: 2019
+    title_kr: "가변추력을 위한 기체주입식 와류형 분사기의 분무특성"
+    title_en: "Spray Characteristics of Effervescent Swirl Injectors for Variable Thrust"
+    authors: "Wongu Lee, Donghyun Hwang, Kyubok Ahn, Youngbin Yoon"
+    venue: "한국추진공학회지, 23(2), p.1"
+    url: "https://doi.org/10.6108/kspe.2019.23.2.001"
+
+  - year: 2019
+    title_kr: "아음속 횡단류로 분사되는 이상유동 제트의 분무특성"
+    title_en: "Spray Characteristics of Two-Phase Flow Jets into a Subsonic Crossflow"
+    authors: "Keunseok Lee, Wongu Lee, Youngbin Yoon, Kyubok Ahn"
+    venue: "한국분무공학회지, 24(1), pp.27-34"
+    url: "https://doi.org/10.15435/JILASSKR.2019.24.1.27"
+
+  - year: 2018
+    title_kr: "케로신 내 용존질소 측정 및 제거 방법 연구"
+    title_en: "A Study on Measurement and Elimination Methods of Dissolved Nitrogen in Kerosene"
+    authors: "Wongu Lee, Seong Lyong Kim, Kyubok Ahn"
+    venue: "한국추진공학회지, 22(6), p.142"
+    url: "https://doi.org/10.6108/kspe.2018.22.6.142"
+
+  - year: 2018
+    title_kr: "냉각채널의 각도와 직경 변화에 따른 채널 내 압력 손실에 관한 수치적 연구"
+    title_en: "Numerical Study on the Pressure Loss for Various Angles and Diameters of Cooling Channel"
+    authors: "Jin Park, Hyun-Seob Lee, Hong Jip Kim, Kyubok Ahn"
+    venue: "한국추진공학회지, 22(2), p.87"
+    url: "https://doi.org/10.6108/kspe.2018.22.2.087"
+
+  - year: 2018
+    title_kr: "기체 탄화수소 연료 연소시험에서 연소불안정의 개루프 제어"
+    title_en: "Open-Loop Control of Combustion Instability in Hot-Firing Test Using Gaseous Hydrocarbon Fuel"
+    authors: "Donghyun Hwang, Kyubok Ahn"
+    venue: "한국추진공학회지, 22(6), p.28"
+    url: "http://doi.org/10.6108/kspe.2018.22.6.028"
+
+  - year: 2018
+    title_kr: "음향가진 횡단류에서 액체제트의 분무특성"
+    title_en: "Spray Characteristics of Liquid Jets in Acoustically-Forced Crossflows"
+    authors: "Yoonho Song, Donghyun Hwang, Kyubok Ahn"
+    venue: "한국추진공학회지, 22(2), p.1"
+    url: "https://doi.org/10.6108/kspe.2018.22.2.001"
+
+  - year: 2018
+    title_kr: "리세스 길이가 다른 동축 와류형 분사기들에 대한 수치해석"
+    title_en: "Numerical Study on Swirl Coaxial Injectors with Different Recess Lengths"
+    authors: "Bom Lee, Wonjae Yoon, Youngbin Yoon, Kyubok Ahn"
+    venue: "한국분무공학회지, 23(2), pp.49-57"
+    url: "https://doi.org/10.15435/JILASSKR.2018.23.2.49"
+
+  - year: 2017
+    title_kr: "단공 노즐의 오리피스 형상이 액체제트 유동특성에 미치는 영향"
+    title_en: "Effect of Orifice Geometry on Flow Characteristics of Liquid Jet from Single Hole Nozzle"
+    authors: "Yoonho Song, Donghyun Hwang, Kyubok Ahn"
+    venue: "한국추진공학회지, 21(5), p.19"
+    url: "https://doi.org/10.6108/kspe.2017.21.5.019"
+
+  - year: 2017
+    title_kr: "ANSYS Fluent를 이용한 와류형 분사기의 분무특성 연구"
+    title_en: "A Study on the Spray Characteristics of Swirl Injectors Using ANSYS Fluent"
+    authors: "Wonjae Yoon, Bom Lee, Kyubok Ahn"
+    venue: "한국분무공학회지, 22(4), pp.159-168"
+    url: "https://doi.org/10.15435/JILASSKR.2017.22.4.159"
+
+  - year: 2016
+    title_kr: "다양한 탄화수소 연료를 이용한 열방출 섭동 연구"
+    title_en: "A Study on Heat Release Fluctuation Using Various Hydrocarbon Fuels"
+    authors: "Donghyun Hwang, Kyubok Ahn"
+    venue: "한국추진공학회지, 20(6), p.1"
+    url: "https://doi.org/10.6108/kspe.2016.20.6.001"
+
+  - year: 2016
+    title_kr: "직선 냉각채널 내 압력손실에 관한 실험적 연구"
+    title_en: "An Experimental Study on Pressure Loss in Straight Cooling Channels"
+    authors: "Wonjae Yoon, Kyubok Ahn, Hong Jip Kim"
+    venue: "한국추진공학회지, 20(4), p.94"
+    url: "https://doi.org/10.6108/kspe.2016.20.4.094"
+
+  - year: 2015
+    title_kr: "캐비테이션 벤츄리의 유동특성에 관한 실험적 연구"
+    title_en: "An Experimental Study on Flow Characteristics of Cavitation Venturi"
+    authors: "Wonjae Yoon, Kyubok Ahn"
+    venue: "한국추진공학회지, 19(4), p.1"
+    url: "https://doi.org/10.6108/kspe.2015.19.4.001"
+
+  - year: 2015
+    title_kr: "소형 원심 압축기의 성능 향상을 위한 베인 없는 디퓨저와 볼류트 케이싱의 설계에 관한 연구"
+    title_en: "A study on the vaneless diffuser and volute casing design for the improvement of small centrifugal compressors"
+    authors: "Jae Phil Jo, Seung Yun Paek, Sung-Don Kim, Kyubok Ahn"
+    venue: "한국산학기술학회논문지, 16(6), pp.3722-3730"
+    url: "https://doi.org/10.5762/KAIS.2015.16.6.3722"
+
+  - year: 2015
+    title_kr: "초대형 유압브레이커 개발"
+    title_en: "Development of Extra-large Hydraulic Breaker"
+    authors: "Kyubok Ahn"
+    venue: "한국산학기술학회논문지, 16(5), pp.3081-3086"
+    url: "https://doi.org/10.5762/KAIS.2015.16.5.3081"
+
+  - year: 2014
+    title_kr: "액체로켓엔진 연소기의 연소안정성 평가시험"
+    title_en: "Combustion Stability Rating Test of Liquid Rocket Engine Thrust Chamber"
+    authors: "Kyubok Ahn, Jong‐Gyu Kim, Hwan-Seok Choi"
+    venue: "한국추진공학회지, 18(2), p.60"
+    url: "https://doi.org/10.6108/kspe.2014.18.2.060"
+
+  - year: 2014
+    title_kr: "액체로켓엔진 시험설비에서 캐비테이션 벤츄리의 유량제어 특성"
+    title_en: "Flow Control Characteristics of Cavitating Venturi in a Liquid Rocket Engine Test Facility"
+    authors: "Donghyuk Kang, Kyubok Ahn, Byoungjik Lim, Sanghoon Han, Hwan-Seok Choi, Seonghyeon Seo, Hong Jip Kim"
+    venue: "한국추진공학회지, 18(3), p.84"
+    url: "https://doi.org/10.6108/kspe.2014.18.3.084"
+
+  - year: 2014
+    title_kr: "연소불안정에 따른 축소형 연소기에서의 열전달 영향"
+    title_en: "Effect of Combustion Instability on Heat Transfer in a Subscale Thrust Chamber"
+    authors: "Kyubok Ahn"
+    venue: "한국산학기술학회논문지, 15(6), pp.3403-3409"
+    url: "https://doi.org/10.5762/KAIS.2014.15.6.3403"
+
+  - year: 2012
+    title_kr: "75톤급 재생냉각 연소기 기술검증시제 연료측 수류시험 및 압력강하 해석"
+    title_en: "Fuel-Side Cold-Flow Test and Pressure Drop Analysis on Technology Demonstration Model of 75 ton-class Regeneratively-Cooled Combustion Chamber"
+    authors: "Kyubok Ahn, Jong‐Gyu Kim, Byoungjik Lim, Munki Kim, Donghyuk Kang, Seong-Ku Kim, Hwan-Seok Choi"
+    venue: "한국추진공학회지, 16(6), p.56"
+    url: "https://doi.org/10.6108/kspe.2012.16.6.056"
+
+  - year: 2010
+    title_kr: "연소실 압력 변화에 따른 추력실 압력 섭동 분석"
+    title_en: "Analysis of Pressure Fluctuations in a Thrust Chamber with Chamber Pressure Variation"
+    authors: "Kyubok Ahn, Byoungjik Lim, Jong‐Gyu Kim, Yeoung-Min Han, Choi Hwan Seok"
+    venue: "한국추진공학회지"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01846343"
+
+  - year: 2010
+    title_kr: "75톤급 액체로켓엔진 추력실 저압조건 연소안정성 평가시험"
+    title_en: "Combustion Stability Rating Test under Low Pressure Condition of a 75-tonf-class LRE Thrust Chamber"
+    authors: "Kwang‐Jin Lee, Donghyuk Kang, Munki Kim, Kyubok Ahn, Yeoung-Min Han, Hwan-Seok Choi"
+    venue: "한국추진공학회지"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01846354"
+
+  - year: 2009
+    title_kr: "재생냉각 연소기 연소시험 결과의 연소안정성 분석"
+    title_en: "Combustion Stability Analysis on Hot-firing Test Results of Regenerative Cooling Combustion Chamber"
+    authors: "Kyubok Ahn, Byoungjik Lim, Kwang‐Jin Lee, Yeoung-Min Han, Hwan-Seok Choi"
+    venue: "한국추진공학회지"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01846519"
+
+  - year: 2007
+    title_kr: "액체로켓엔진 연료 과농 가스발생기 개발"
+    title_en: "Development of a Liquid Rocket Engine Fuel-Rich Gas Generator"
+    authors: "Seonghyeon Seo, Kyubok Ahn, Byoungjik Lim, Jong‐Gyu Kim, Kwang‐Jin Lee, Yeoung-Min Han, Chul-Sung Ryu, Hong Jip Kim, Choi Hwan Seok"
+    venue: "한국추진공학회지"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01829771"
+
+  - year: 2007
+    title_kr: "실물형 가스발생기의 연소실 설계가 연소안정 특성에 미치는 영향"
+    title_en: "Effect of Combustion Chamber Design on Combustion Stability Characteristics of a Full-scale Gas Generator"
+    authors: "Kwang‐Jin Lee, Seonghyeon Seo, Yeoung-Min Han, Hwan-Seok Choi, Kyubok Ahn"
+    venue: "한국추진공학회지"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01830115"
+
+  - year: 2007
+    title_kr: "수냉각 고압 축소형 연소기의 설계 및 연소시험"
+    title_en: "The Design and Hot-firing tests of a Water-cooled High Pressure Sub-scale Combustor"
+    authors: "Kwang‐Jin Lee, Jong‐Gyu Kim, Byoungjik Lim, Kyubok Ahn, Seonghyeon Seo, Yeoung-Min Han, Hwan-Seok Choi"
+    venue: "한국추진공학회지"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01829845"
+
+  - year: 2006
+    title_kr: "고압 액체추진제 추력실의 연소시험"
+    title_en: "Combustion Experiments of a High Pressure Liquid Propellant Thrust Chamber"
+    authors: "Seonghyeon Seo, Yeoung-Min Han, Il-Yoon Moon, Kwang‐Jin Lee, Jong-Kyu Kim, Byung-Jik Lim, Kyubok Ahn, Hwan-Seok Choi"
+    venue: "한국추진공학회지"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01846398"
+
+  - year: 2006
+    title_kr: "덤프 연소기에서 연소불안정에 관한 실험적 연구"
+    title_en: "Experimental Study on Combustion Instability in a Dump Combustor"
+    authors: "Kyubok Ahn"
+    venue: "한국항공우주학회지, 34(12), p.35"
+    url: "https://doi.org/10.5139/jksas.2006.34.12.035"
+
+  - year: 2004
+    title_kr: "고조파 저감 기능을 갖는 직류 전기철도용 회생 인버터 시스템"
+    title_en: "Regeneration Inverter System for DC Traction with Hormonic Reduction Capability"
+    authors: "Chung-Yuen Won, Su-Jin Jang, Yong-Ki Kim, Hyo-Jin Bang, Sang-Hun Song, Kyubok Ahn"
+    venue: "조명·전기설비학회논문지, 18(5), p.96"
+    url: "https://doi.org/10.5207/jieie.2004.18.5.096"
+
+  - year: 2003
+    title_kr: "아음속 횡단류 내 수직분사에서 오리피스 내부유동의 영향"
+    title_en: "Effects of Orifice Internal Flow on Transverse Injection into Subsonic Crossflows"
+    authors: "Junghoon Kim, Kyubok Ahn, Youngbin Yoon"
+    venue: "한국추진공학회지"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01847180"
+
 
 # 국외논문
 international:
+  - year: 2026
+    title: "Characterization of Spray Oscillation Induced by Liquid Film Merging and Breakup in a Biswirl Coaxial Injector"
+    authors: "Hadong Jung, Jiwon Lee, Kyubok Ahn"
+    venue: "Aerospace Science and Technology"
+    url: ""
+    doi: "https://doi.org/10.1016/j.ast.2026.112410"
+
   - year: 2025
-    title: "Experimental Study on Combustion Instability of a Small-Scale Solid Rocket Motor"
-    authors: "C. Kim, G. Hong"
-    venue: "Journal of Propulsion and Power, Vol.41, No.3"
+    title: "EFFECT OF DESIGN PARAMETERS ON SPRAY CHARACTERISTICS OF ADDITIVELY MANUFACTURED BISWIRL COAXIAL INJECTORS"
+    authors: "Chang‐Young Oh, Dong‐Woo Choi, Seunghyeon Lee, Kyubok Ahn"
+    venue: "International journal of fluid mechanics research"
+    url: ""
+    doi: "https://doi.org/10.1615/interjfluidmechres.2025057929"
+
+  - year: 2025
+    title: "Investigating the dynamics of cytomegalovirus movement in viscoelastic Casson fluid: effects of electric and magnetic fields"
+    authors: "Kyubok Ahn, Y. M. Gifteena Hingis, M. Muthtamilselvan, Qasem M. Al‐Mdallal"
+    venue: "Journal of Biological Physics"
+    url: ""
+    doi: "https://doi.org/10.1007/s10867-025-09680-y"
+
+  - year: 2025
+    title: "Numerical Study on Self-Pulsation Phenomenon in Liquid-Centered Swirl Coaxial Injector with Recess"
+    authors: "Jiwon Lee, Hadong Jung, Kyubok Ahn"
+    venue: "Aerospace"
+    url: ""
+    doi: "https://doi.org/10.3390/aerospace12090796"
+
+  - year: 2025
+    title: "Stability Analysis of a Third Diffusing Component of Rayleigh–Bénard Problem With an Entropy Generation"
+    authors: "Y. M. Gifteena Hingis, M. Muthtamilselvan, Kyubok Ahn"
+    venue: "Asia-Pacific Journal of Chemical Engineering"
+    url: ""
+    doi: "https://doi.org/10.1002/apj.70027"
+
+  - year: 2025
+    title: "Advancements in Methane Expander-Cycle Engines: Evaluating Additively Manufactured Ribbed Chambers"
+    authors: "Dongwoo Choi, Cheolwoong Kang, Shinwoo Lee, Kenneth H. Yu, Kyubok Ahn"
+    venue: "International Journal of Aeronautical and Space Sciences"
+    url: ""
+    doi: "https://doi.org/10.1007/s42405-025-00987-7"
+
+  - year: 2024
+    title: "Stochastic disturbance with finite-time chaos stabilization and synchronization for a fractional-order nonautonomous hybrid nonlinear complex system via a sliding mode control"
+    authors: "R. Surendar, M. Muthtamilselvan, Kyubok Ahn"
+    venue: "Chaos Solitons & Fractals"
+    url: ""
+    doi: "https://doi.org/10.1016/j.chaos.2024.114659"
+
+  - year: 2024
+    title: "Effects of Non-Uniform Center-Flow Distribution and Cavitation on Continuous-Type Pintle Injectors"
+    authors: "Dong‐Woo Choi, Seunghyeon Lee, Kyubok Ahn"
+    venue: "Aerospace"
+    url: ""
+    doi: "https://doi.org/10.3390/aerospace11100847"
+
+  - year: 2024
+    title: "Effects of rotation and chemical reactions on an electroconvection in Maxwell dielectric nanofluids within anisotropic porous media"
+    authors: "S. Sridhar, M. Muthtamilselvan, Kyubok Ahn"
+    venue: "Journal of Taibah University for Science"
+    url: ""
+    doi: "https://doi.org/10.1080/16583655.2024.2421576"
+
+  - year: 2024
+    title: "Joule heating effects on dielectric fluids in EHD-enhanced thermoconvection within a ventilation system"
+    authors: "V. Navaneethakrishnan, M. Muthtamilselvan, Kyubok Ahn, Qasem M. Al‐Mdallal"
+    venue: "International Communications in Heat and Mass Transfer"
+    url: ""
+    doi: "https://doi.org/10.1016/j.icheatmasstransfer.2024.108479"
+
+  - year: 2024
+    title: "Combustion Characteristics of Shear Coaxial Injectors with Different Recess Lengths Under Wide Operating Conditions"
+    authors: "Cheolwoong Kang, Shinwoo Lee, Kyubok Ahn"
+    venue: "International Journal of Aeronautical and Space Sciences"
+    url: ""
+    doi: "https://doi.org/10.1007/s42405-024-00738-0"
+
+  - year: 2023
+    title: "Convergence and stability analysis on the rotating hybrid flow of Cu–Fe 2 O 3 /water"
+    authors: "Kyubok Ahn, S. Suganya, M. Muthtamilselvan"
+    venue: "Numerical Heat Transfer Part B Fundamentals"
+    url: ""
+    doi: "https://doi.org/10.1080/10407790.2023.2275729"
+
+  - year: 2023
+    title: "Entropy analysis of Casson nanofluid flow across a rotating porous disc with nonlinear thermal radiation and magnetic dipole"
+    authors: "E. Ragupathi, D. Prakash, M. Muthtamilselvan, Kyubok Ahn"
+    venue: "International Journal of Modern Physics B"
+    url: ""
+    doi: "https://doi.org/10.1142/s0217979223503083"
+
+  - year: 2023
+    title: "Homotopy analysis approach to Ferro-hydrodynamic bio-nanofluid flow over a co-axial rotating discs with Stefan blowing and magnetic dipole"
+    authors: "E. Ragupathi, D. Prakash, M. Muthtamilselvan, Kyubok Ahn"
+    venue: "Numerical Heat Transfer Part B Fundamentals"
+    url: ""
+    doi: "https://doi.org/10.1080/10407790.2023.2223355"
+
+  - year: 2023
+    title: "Production of entropy due to combined buoyancy and Marangoni convection in a cylindrical annular enclosure"
+    authors: "Kyubok Ahn, B. Kanimozhi, M. Muthtamilselvan, Qasem M. Al‐Mdallal, Thabet Abdeljawad"
+    venue: "Case Studies in Thermal Engineering"
+    url: ""
+    doi: "https://doi.org/10.1016/j.csite.2023.103340"
+
+  - year: 2022
+    title: "A New Proposal for a Method to Measure Orthogonal R-Value Using a Single Tensile Test with Three-Dimensional Digital Image Correlation"
+    authors: "G. Gu, Y. Kim, Hyeonseok Kwon, Soung Yeoul Ahn, Min Hong Seo, Kyubok Ahn, Hyoung Seop Kim"
+    venue: "Experimental Mechanics"
+    url: ""
+    doi: "https://doi.org/10.1007/s11340-022-00857-3"
+
+  - year: 2022
+    title: "Effect of Mixing Section Acoustics on Combustion Instability in a Swirl-Stabilized Combustor"
+    authors: "Donghyun Hwang, Cheolwoong Kang, Kyubok Ahn"
+    venue: "Energies"
+    url: ""
+    doi: "https://doi.org/10.3390/en15228492"
+
+  - year: 2022
+    title: "Effect of the recess length on the dynamic characteristics of liquid-centered swirl coaxial injectors"
+    authors: "Jonghyun Ahn, Hayoung Lim, Gijeong Jeong, Kyubok Ahn"
+    venue: "Acta Astronautica"
+    url: ""
+    doi: "https://doi.org/10.1016/j.actaastro.2022.07.012"
+
+  - year: 2022
+    title: "Coking Test Using Jet A-1 and Desulfurized Kerosene in a Regenerative Cooling Channel Environment"
+    authors: "Dain Lee, Kangyeong Lee, Sunwoo Han, Kyubok Ahn"
+    venue: "International Journal of Aeronautical and Space Sciences"
+    url: ""
+    doi: "https://doi.org/10.1007/s42405-022-00463-6"
+
+  - year: 2021
+    title: "Experimental Study on Dynamic Combustion Characteristics in Swirl-Stabilized Combustors"
+    authors: "Donghyun Hwang, Kyubok Ahn"
+    venue: "Energies"
+    url: ""
+    doi: "https://doi.org/10.3390/en14061609"
+
+  - year: 2021
+    title: "Flow measurement and instrumentation flow control characteristics of throttling venturi valve with adjustable area"
+    authors: "Wonjae Yoon, Hosung Yoon, Jonghyeon Ahn, Kyubok Ahn"
+    venue: "Flow Measurement and Instrumentation"
+    url: ""
+    doi: "https://doi.org/10.1016/j.flowmeasinst.2021.102034"
+
+  - year: 2021
+    title: "One-Dimensional Analysis of Double Annular Combustor for Reducing Harmful Emissions"
+    authors: "Gijeong Jeong, Kyubok Ahn"
+    venue: "Energies"
+    url: ""
+    doi: "https://doi.org/10.3390/en14133930"
+
+  - year: 2020
+    title: "Cold-flow Tests on Three Different Types of Bi-swirl Coaxial Injectors for a Bipropellant Thruster"
+    authors: "Wongu Lee, Kyubok Ahn, Su-Hee Won"
+    venue: "Journal of Propulsion and Energy"
+    url: ""
+    doi: "https://doi.org/10.6108/jpne.2020.1.1.044"
+
+  - year: 2019
+    title: "Combustion instability characteristics in a dump combustor using different hydrocarbon fuels"
+    authors: "D. Hwang, Young Il Song, Kyubok Ahn"
+    venue: "The Aeronautical Journal"
+    url: ""
+    doi: "https://doi.org/10.1017/aer.2019.19"
+
+  - year: 2019
+    title: "Experimental Study on the Discharge Coefficient of Bi-Swirl Coaxial Injectors"
+    authors: "Kyubok Ahn, B. J. Lee"
+    venue: "Journal of Applied Fluid Mechanics"
+    url: ""
+    doi: "https://doi.org/10.29252/jafm.12.05.29533"
+
+  - year: 2019
+    title: "Effect of Orifice Geometry on Column Trajectories of Liquid Jets in Crossflows"
+    authors: "Yoonho Song, Donghyun Hwang, Kyubok Ahn"
+    venue: "International Journal of Aeronautical and Space Sciences"
+    url: ""
+    doi: "https://doi.org/10.1007/s42405-018-0130-3"
+
+  - year: 2018
+    title: "Experimental and Theoretical Study on Spray Angles of Bi-Swirl Coaxial Injectors"
+    authors: "Wonjae Yoon, Kyubok Ahn"
+    venue: "Journal of Applied Fluid Mechanics"
+    url: ""
+    doi: "https://doi.org/10.29252/jafm.11.05.28814"
+
+  - year: 2018
+    title: "Flame Length Scaling of C2H4-Air Premixed Flames under Acoustic Forcing"
+    authors: "D. Hwang, Kyubok Ahn, Youngbin Yoon"
+    venue: "Journal of Applied Fluid Mechanics"
+    url: ""
+    doi: "https://doi.org/10.29252/jafm.11.03.28308"
+
+  - year: 2017
+    title: "A STUDY ON DISCHARGE COEFFICIENTS OF CLOSED-TYPE SWIRL INJECTORS FOR A LIQUID ROCKET ENGINE"
+    authors: "Kyubok Ahn, Hwan-Seok Choi"
+    venue: "Atomization and Sprays"
+    url: ""
+    doi: "https://doi.org/10.1615/atomizspr.2017019096"
+
+  - year: 2017
+    title: "AN EXTENSIVE STUDY ON THE DISCHARGE COEFFICIENTS OF OPEN-TYPE SWIRL INJECTORS"
+    authors: "Kyubok Ahn, Hwan-Seok Choi"
+    venue: "Atomization and Sprays"
+    url: ""
+    doi: "https://doi.org/10.1615/atomizspr.2017019293"
+
+  - year: 2016
+    title: "FLOW CHARACTERISTICS OF CLOSE-TYPE SWIRL INJECTORS MANUFACTURED BY A 3D PRINTER"
+    authors: "Wonjae Yoon, Kyubok Ahn"
+    venue: "Atomization and Sprays"
+    url: ""
+    doi: "https://doi.org/10.1615/atomizspr.2016015596"
+
+  - year: 2014
+    title: "Effects of injector recess on heat flux in a combustion chamber with cooling channels"
+    authors: "Kyubok Ahn, Jong-Gyu Kim, Hwan-Seok Choi"
+    venue: "Aerospace Science and Technology"
+    url: ""
+    doi: "https://doi.org/10.1016/j.ast.2014.05.012"
+
+  - year: 2014
+    title: "PREDICTION OF PRESSURE DROP THROUGH BAFFLE INJECTOR"
+    authors: "Kyubok Ahn, Hwan-Seok Choi"
+    venue: "Atomization and Sprays"
+    url: ""
+    doi: "https://doi.org/10.1615/atomizspr.2013008918"
+
+  - year: 2014
+    title: "Stability Characteristics of Bi-swirl Coaxial Injectors in Fuel-rich Combustion"
+    authors: "Kyubok Ahn, Byoungjik Lim, Hwan-Seok Choi"
+    venue: "TRANSACTIONS OF THE JAPAN SOCIETY FOR AERONAUTICAL AND SPACE SCIENCES"
+    url: ""
+    doi: "https://doi.org/10.2322/tjsass.57.317"
+
+  - year: 2012
+    title: "Assessing the sustenance and evolution of social and cultural contexts within sustainable urban development, using as a case the MAC in South Korea"
+    authors: "Hee Sun Choi, Kyubok Ahn"
+    venue: "Sustainable Cities and Society"
+    url: ""
+    doi: "https://doi.org/10.1016/j.scs.2012.08.003"
+
+  - year: 2012
+    title: "Combustion characteristics of swirl coaxial injectors at kerosene-rich conditions"
+    authors: "Byung-Jik Lim, Seonghyeon Seo, Munki Kim, Kyubok Ahn, Jong‐Gyu Kim, Hwan-Seok Choi"
+    venue: "Fuel"
+    url: ""
+    doi: "https://doi.org/10.1016/j.fuel.2012.10.078"
+
+  - year: 2012
+    title: "Combustion Dynamics of Swirl Coaxial Injectors in Fuel-Rich Combustion"
+    authors: "Kyubok Ahn, Hwan-Seok Choi"
+    venue: "Journal of Propulsion and Power"
+    url: ""
+    doi: "https://doi.org/10.2514/1.B34448"
+
+  - year: 2012
+    title: "Effects of Recess Length on Discharge Coefficients of Swirl Coaxial Injectors"
+    authors: "Kyubok Ahn, Yeoung-Min Han, Hwan-Seok Choi"
+    venue: "Combustion Science and Technology"
+    url: ""
+    doi: "https://doi.org/10.1080/00102202.2011.635615"
+
+  - year: 2011
+    title: "Effects of Damköhler number on vortex–flame interaction"
+    authors: "Kyubok Ahn, Kenneth H. Yu"
+    venue: "Combustion and Flame"
+    url: ""
+    doi: "https://doi.org/10.1016/j.combustflame.2011.07.021"
+
+  - year: 2011
+    title: "Effects of Orifice Internal Flow on Liquid Jets in Subsonic Crossflows"
+    authors: "Jinkwan Song, Kyubok Ahn, Min‐Ki Kim, Youngbin Yoon"
+    venue: "Journal of Propulsion and Power"
+    url: ""
+    doi: "https://doi.org/10.2514/1.B34011"
+
+  - year: 2011
+    title: "Fuel-Rich Combustion Characteristics of Biswirl Coaxial Injectors"
+    authors: "Kyubok Ahn, Seonghyeon Seo, Hwan-Seok Choi"
+    venue: "Journal of Propulsion and Power"
+    url: ""
+    doi: "https://doi.org/10.2514/1.B34121"
+
+  - year: 2010
+    title: "Effects of Injector Recess and Chamber Pressure on Combustion Characteristics of Liquid–Liquid Swirl Coaxial Injectors"
+    authors: "Kyubok Ahn, Yeoung-Min Han, Seonghyeon Seo, Hwan-Seok Choi"
+    venue: "Combustion Science and Technology"
+    url: ""
+    doi: "https://doi.org/10.1080/00102202.2010.516289"
+
+  - year: 2006
+    title: "Characterization of Side-Dump Combustor Flowfield Using Particle Image Velocimetry"
+    authors: "Kyubok Ahn, Youngbin Yoon"
+    venue: "Journal of Propulsion and Power"
+    url: ""
+    doi: "https://doi.org/10.2514/1.20363"
+
+  - year: 2005
+    title: "EFFECTS OF ORIFICE INTERNAL FLOW ON TRANSVERSE INJECTION INTO SUBSONIC CROSSFLOWS: CAVITATION AND HYDRAULIC FLIP"
+    authors: "Youngbin Yoon, Kyubok Ahn, Jung‐Hoon Kim"
+    venue: "Atomization and Sprays"
+    url: ""
+    doi: "https://doi.org/10.1615/atomizspr.v16.i1.20"
+
+  - year: 2003
+    title: "Application of PIV to over-expanded supersonic flows: Possibilities and limits"
+    authors: "Kyubok Ahn, J. H. Kim, Youngbin Yoon"
+    venue: "Journal of Visualization"
+    url: ""
+    doi: "https://doi.org/10.1007/bf03181742"
+
 
 # 특허
 patents:
+  - year: 2026
+    title: "리브 내벽을 갖는 팽창식 사이클 엔진의 연소기"
+    inventors: "안규복, 강철웅, 이신우, 최동우"
+    number: "등록번호(일자) 10-2915435 (2026.01.15)"
+
   - year: 2025
-    title: "고온 연소 환경용 다채널 압력 계측 장치"
-    inventors: "홍길동, 김철수"
-    number: "출원번호 10-2025-00000000"
+    title: "소형 추력기용 동축 와류형 분사장치"
+    inventors: "안규복, 최동우, 오창영"
+    number: "등록번호(일자) 10-2838971 (2025.07.25)"
+
+  - year: 2023
+    title: "소형 추력기에 사용되는 와류형 동축 전단 분사 헤드"
+    inventors: "정기정, 안규복"
+    number: "등록번호(일자) 10-2487603 (2023.01.10)"
+
+  - year: 2022
+    title: "로켓 엔진의 동축 전단 분사기"
+    inventors: "정기정, 안규복"
+    number: "등록번호(일자) 10-2480591 (2022.12.22)"
+
+  - year: 2018
+    title: "케로신 연료 내 질소함유량 측정장치 및 측정방법"
+    inventors: "안규복"
+    number: "등록번호(일자) 10-1906303 (2018.10.02)"
+
+  - year: 2017
+    title: "타격수 및 타격에너지 조절이 가능한 유압브레이커"
+    inventors: "안규복, 황동현, 송윤호"
+    number: "등록번호(일자) 10-1693439 (2017.01.05)"
+
+  - year: 2017
+    title: "열매유를 이용한 케로신의 열전달, 열분해 실험장치"
+    inventors: "안규복, 윤원재, 이봄"
+    number: "등록번호(일자) 10-1715513 (2017.03.13)"
+
+  - year: 2016
+    title: "유압브레이커의 소음 감쇄 장치"
+    inventors: "안규복, 황동현, 윤원재"
+    number: "등록번호(일자) 10-1650081 (2016.08.23)"
+
+  - year: 2015
+    title: "슬라이딩 구조를 갖는 막대형 스테플러"
+    inventors: "양희주, 안규현, 원종성, 안병준, 양승진, 황동현, 안규복"
+    number: "등록번호(일자) 10-1575898 (2015.12.02)"
+
+  - year: 2015
+    title: "냉각모듈이 구비된 유압브레이커"
+    inventors: "안규복, 김규현, 진갑선"
+    number: "등록번호(일자) 10-1580099 (2015.12.18)"
+
+  - year: 2015
+    title: "유압브레이커의 타격수측정 장치 및 방법"
+    inventors: "안규복, 김기태, 진갑선"
+    number: "등록번호(일자) 10-1524842 (2015.05.26)"
+
+  - year: 2015
+    title: "유압브레이커의 고장진단 시스템 및 방법"
+    inventors: "안규복, 안동준, 진갑선"
+    number: "등록번호(일자) 10-1580097 (2015.12.18)"
+
+  - year: 2009
+    title: "연소기의 노즐 제작방법"
+    inventors: "이광진, 김종규, 임병직, 안규복, 서성현, 한영민, 류철성, 최환석"
+    number: "등록번호(일자) 10-0931002 (2009.12.02)"
+
+  - year: 2007
+    title: "로켓엔진용 점화기"
+    inventors: "서성현, 이광진, 한영민, 김종규, 임병직, 안규복, 최환석"
+    number: "등록번호(일자) 10-0668804 (2007.01.08)"
+
 
 # 학술대회 발표
 conferences:
-  - year: 2026
-    title: "하이브리드 로켓 연소 불안정성에 관한 실험적 연구"
-    authors: "김철수, 홍길동"
-    venue: "2026 한국추진공학회 하계학술대회 (우수발표논문상)"
+  - year: 2025
+    title: "Effect of Manufacturing Methods and Geometry on Cold Flow Characteristics of Liquid-Liquid Pintle Injectors"
+    venue: "The 12th Asian Joint Conference on Propulsion and Power"
 
   - year: 2025
-    title: "친환경 고체 추진제의 연소 특성 비교 연구"
-    authors: "박민수, 홍길동"
+    title: "10 N급 이중와류동축 분사기 설계, 제작 및 수류시험"
+    venue: "2025 한국항공우주학회 춘계학술대회"
+
+  - year: 2025
+    title: "추력기용 기체-기체 이중와류동축 분사기 형상에 따른 연소실 내에서의 유동특성"
+    venue: "2025 한국추진공학회 춘계학술대회"
+
+  - year: 2025
+    title: "추진제 분사 온도에 따른 메탄엔진 단일분사기급 연소기의 연소특성"
+    venue: "2025 한국추진공학회 춘계학술대회"
+
+  - year: 2025
+    title: "상세 반응 메커니즘(FFCM-1) 기반 메탄-산소/공기 골격구조 생성 및 연소 해석"
+    venue: "2025 한국추진공학회 춘계학술대회"
+
+  - year: 2025
+    title: "Instability analysis of spray oscillation in a bi-swirl coaxial injector"
+    venue: "11th European Conference for Aeronautics and Space Sciences"
+
+  - year: 2025
+    title: "전유동 다단연소 사이클 메탄엔진 산화제 예연소기 및 연소기 핵심기술 연구"
+    venue: "2025 한국항공우주학회/한국추진공학회 추진부문 워크숍"
+
+  - year: 2025
+    title: "Influence of Slot Configuration and Skip Length on Spray Characteristics of Liquid-liquid Pintle Injector"
+    venue: "2025 Asia-Pacific International Symposium on Aerospace Technology"
+
+  - year: 2025
+    title: "Numerical Analysis of Swirl Cone Angle Effects in a Gas-Gas Injector for Satellite Thruster Applications"
+    venue: "23th Annual Conference on Liquid Atomization and Spray Systems - Asia"
+
+  - year: 2025
+    title: "500 N급 이원추진제 추력기 핀틀 분사기 수류실험"
+    venue: "2025 한국분무공학회 추계학술대회"
+
+  - year: 2025
+    title: "단일분사기급 연소기에서 전단/와류동축 분사기의 연소특성"
+    venue: "2025 한국분무공학회 추계학술대회"
+
+  - year: 2025
+    title: "10 N급 이중와류동축 분사기 개발 및 수류시험"
+    venue: "2025 한국분무공학회 추계학술대회"
+
+  - year: 2025
+    title: "다공성 분사기 헤드가 있는 LOX/LNG 연소기에서 추진제 분사 시퀀스에 따른 레이저 점화특성"
     venue: "2025 한국항공우주학회 추계학술대회"
+
+  - year: 2025
+    title: "35톤급 전유량 다단연소 사이클 메탄엔진 및 산화제 예연소기 개념설계"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2025
+    title: "전유량 다단연소 메탄엔진 주연소기 적용을 위한 이중와류동축 분사기 기초 연소시험"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2025
+    title: "연속형 슬릿/슬롯 핀틀분사기의 형상변수에 따른 분무특성"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2025
+    title: "Smooth-Type Pre-detonator의 설계 및 예비 실험"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2025
+    title: "전유동 다단연소 사이클 메탄엔진 산화제 예연소기 제작기술연구"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2025
+    title: "35톤급 전유량 다단연소 사이클 메탄엔진의 화학프로그램 분석 및 주연소기 개념설계"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2025
+    title: "500 N급 이중와류동축 분사기의 형상변수에 따른 미립화 특성"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2025
+    title: "소형 로켓 연소 시험 소음저감을 위한 소음기 제작 및 시험평가"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2025
+    title: "소형 로켓 연소 시험 소음저감을 위한 소음기 설계"
+    venue: "2025 한국추진공학회 추계학술대회"
+
+  - year: 2024
+    title: "이중와류동축 분사기 설계변수에 따른 액막의 병합 및 분리 매커니즘 연구"
+    venue: "2024 한국추진공학회 춘계학술대회"
+
+  - year: 2024
+    title: "와류동축 분사기들 내 Self-Pulsation 수치 해석"
+    venue: "2024 한국추진공학회 춘계학술대회"
+
+  - year: 2024
+    title: "10 N급 이중와류동축 분사기의 분무 불안정에 관한 실험적 연구"
+    venue: "2024 한국추진공학회 춘계학술대회"
+
+  - year: 2024
+    title: "동축 분사기 형상에 따른 기체메탄/기체산소의 연소특성"
+    venue: "2024 한국추진공학회 춘계학술대회"
+
+  - year: 2024
+    title: "500N급 접촉점화성 추진제 로켓 분사기 제작 및 수력학 특성 분석"
+    venue: "2024 우주학술대회"
+
+  - year: 2024
+    title: "Understanding Self-Pulsation Dynamics in Swirl Coaxial Injectors via Numerical Analysis"
+    venue: "16th International Conference on Liquid Atomization and Spray Systems"
+
+  - year: 2024
+    title: "Effect of Injector Design on Spray Characteristics and Heat Flux in Liquid Rocket Engines"
+    venue: "16th International Conference on Liquid Atomization and Spray Systems"
+
+  - year: 2024
+    title: "Spray Dynamics and Liquid Sheet Behavior in Additive Manufactured Bi-Swirl Coaxial Injectors"
+    venue: "2024 Asia-Pacific International Symposium on Aerospace Technology"
+
+  - year: 2024
+    title: "Experimental Study on the Spray Oscillation of a Bi-Swirl Coaxial Injector"
+    venue: "2024 Asia-Pacific International Symposium on Aerospace Technology"
+
+  - year: 2024
+    title: "액체-액체 핀틀 분사기의 출구형상 및 제작방식에 따른 수류특성"
+    venue: "2024 한국추진공학회 추계학술대회"
+
+  - year: 2024
+    title: "기체-기체 추진제 분사기에 대한 검토 및 개발 동향"
+    venue: "2024 한국추진공학회 추계학술대회"
+
+  - year: 2024
+    title: "10 N급 추력기 이중와류동축 분사기에 대한 유동해석"
+    venue: "2024 한국추진공학회 추계학술대회"
+
+  - year: 2024
+    title: "Comparative Analysis of Heat Flux Variation in LOx/GCH4 Ribbed Combustor with Different Rib Types"
+    venue: "AIAA SciTech 2024 Forum"
+
+  - year: 2023
+    title: "충북대학교 고급추진연소 연구실 소개"
+    venue: "2023년도 추진부문 동계 워크샵"
+
+  - year: 2023
+    title: "Self-Pulsation Characteristics of Swirl Coaxial Injector with Various Internal Geometric Parameters"
+    venue: "The 11th Asian Joint Conference on Propulsion and Power"
+
+  - year: 2023
+    title: "전단/와류 동축형 분사기가 장착된 단일분사기급 연소기의 연소특성"
+    venue: "2023 한국항공우주학회 춘계학술대회"
+
+  - year: 2023
+    title: "이중 와류동축형 분사기의 분사차압에 따른 혼합분사 분무특성"
+    venue: "2023 한국항공우주학회 춘계학술대회"
+
+  - year: 2023
+    title: "연소실에서 냉각채널로의 열유속 계산 및 향후 연구 방향"
+    venue: "2023 한국추진공학회 춘계학술대회"
+
+  - year: 2023
+    title: "액체로켓엔진 질량 추정에 관한 조사 및 향후 연구 방향"
+    venue: "2023 한국추진공학회 춘계학술대회"
+
+  - year: 2023
+    title: "이원추진제 추력기의 추력-중량 비 경향성 분석"
+    venue: "2023 한국추진공학회 춘계학술대회"
+
+  - year: 2023
+    title: "Throttling hot-firing tests of methane engine thrust chamber with uni-element shear coaxial injector"
+    venue: "Aerospace Europe Conference Joint 10th EUCASS-9th CEAS Conference"
+
+  - year: 2023
+    title: "Experimental Study on Self-Pulsation Characteristics of Swirl Coaxial Injectors with Different Internal Geometries"
+    venue: "2023 Asia-Pacific International Symposium on Aerospace Technology"
+
+  - year: 2023
+    title: "Comparative Analysis of Heat Transfer in Combustion Chambers with Ribbed Inner Surface"
+    venue: "2023 Asia-Pacific International Symposium on Aerospace Technology"
+
+  - year: 2023
+    title: "Droplet Velocity and Size Characteristics of Bi-Swirl Coaxial Injector for a 10 N Class Bipropellant Thruster Using PDPA"
+    venue: "23th Annual Conference on Liquid Atomization and Spray Systems - Asia"
+
+  - year: 2023
+    title: "추진제 온도에 따른 메탄엔진 연소기의 연소효율"
+    venue: "2023 한국연소학회 추계학술대회"
+
+  - year: 2023
+    title: "500 N급 이원추진제 추력기 개념설계 및 분사기 설계/제작"
+    venue: "2023 한국항공우주학회 추계학술대회"
+
+  - year: 2023
+    title: "메탄 3톤급 팽창식 사이클 엔진을 위한 연소기의 개발"
+    venue: "2023 한국추진공학회 추계학술대회"
+
+  - year: 2023
+    title: "Inconel 718 적층제조 단일분사기 연소기의 연소특성"
+    venue: "2023 한국추진공학회 추계학술대회"
+
+  - year: 2023
+    title: "추진시스템 모듈 구현을 위한 비추력 추정 알고리즘"
+    venue: "2023 한국추진공학회 추계학술대회"
+
+  - year: 2023
+    title: "500 N급 적층제조 이중와류동축 분사기 설계, 제작, 수류특성"
+    venue: "2023 한국추진공학회 추계학술대회"
+
+  - year: 2023
+    title: "액체 중심 와류동축분사기의 Self-Pulsation 유동해석"
+    venue: "2023 한국추진공학회 추계학술대회"
+
+  - year: 2023
+    title: "액막 안팎의 압력 차를 고려한 와류형 분사기 분무 형상 계산"
+    venue: "2023 한국추진공학회 추계학술대회"
+
+  - year: 2022
+    title: "적층제조된 와류동축형 분사기의 리세스 길이에 따른 연소특성"
+    venue: "2022 한국항공우주학회 춘계학술대회"
+
+  - year: 2022
+    title: "모델 가스터빈 연소기에서 다양한 변수에 따른 동적 연소특성"
+    venue: "2022 한국연소학회 춘계학술대회"
+
+  - year: 2022
+    title: "동축형 분사기의 형상학적 변수에 대한 연구"
+    venue: "2022 한국추진공학회 춘계학술대회"
+
+  - year: 2022
+    title: "메탄엔진 연소기의 추력제어를 위한 유량조절밸브의 예비시험"
+    venue: "2022 한국추진공학회 춘계학술대회"
+
+  - year: 2022
+    title: "Effect of Recess Length on Combustion Characteristics of Additive Manufactured Swirl Coaxial Injector"
+    venue: "9th European Conference for Aeronautics and Space Sciences"
+
+  - year: 2022
+    title: "Combustion Instability Characteristics according to Various Parameters in a Model Gas Turbine Combustor"
+    venue: "2022 Asia-Pacific International Symposium on Aerospace Technology"
+
+  - year: 2022
+    title: "Coking Test Using Various Hydrocarbon Fuels in a Simulated Environment of Regenerative Cooling Channel"
+    venue: "2022 Asia-Pacific International Symposium on Aerospace Technology"
+
+  - year: 2022
+    title: "10 N급 이원추진제 추력기에 적용할 분사기들의 수류실험"
+    venue: "2022 한국분무공학회 추계학술대회"
+
+  - year: 2022
+    title: "PDPA를 이용한 기체주입식 와류형 분사기의 미립화 측정"
+    venue: "2022 한국분무공학회 추계학술대회"
+
+  - year: 2022
+    title: "전단 동축형 분사기의 리세스 길이에 따른 연소특성"
+    venue: "2022 한국항공우주학회 추계학술대회"
+
+  - year: 2022
+    title: "해외 이원추진제 추력기 개발현황"
+    venue: "2022 한국추진공학회 추계학술대회"
+
+  - year: 2022
+    title: "와류동축형 분사기의 내부 형상에 따른 self-pulsation 특성"
+    venue: "2022 한국추진공학회 추계학술대회"
+
+  - year: 2022
+    title: "와류동축형 분사기를 사용한 500 N 메탄엔진의 추력제어 연소시험"
+    venue: "2022 한국추진공학회 추계학술대회"
+
+  - year: 2022
+    title: "단일 전단동축형 분사기가 장착된 연소기의 추력조절 연소시험"
+    venue: "2022 한국추진공학회 추계학술대회"
+
+  - year: 2022
+    title: "팽창식 사이클 엔진에 대한 검토 및 개발 동향"
+    venue: "2022 한국추진공학회 추계학술대회"
+
+  - year: 2022
+    title: "모델 가스터빈 연소기에서 스월러 허브 길이와 연소불안정 특성의 연관성"
+    venue: "2022 한국추진공학회 추계학술대회"
+
+  - year: 2021
+    title: "Frequency Analysis of Spray Oscillation Phenomenon from SLM Processing Swirl Coaxial Injector"
+    venue: "The 10th Asian Joint Conference on Propulsion and Power"
+
+  - year: 2021
+    title: "Hot-firing tests of a methane engine thrust chamber with an uni-element shear coaxial injector"
+    venue: "The 10th Asian Joint Conference on Propulsion and Power"
+
+  - year: 2021
+    title: "A Study on Combustion Instability Characteristics in Acoustically Coupled/Decoupled Condition"
+    venue: "The 10th Asian Joint Conference on Propulsion and Power"
+
+  - year: 2021
+    title: "가스터빈 연소기 환경을 모사한 케로신 코킹시험"
+    venue: "2021 한국추진공학회 춘계학술대회"
+
+  - year: 2021
+    title: "스월-안정화 연소기에서 입구영역 음향이 동적 연소 특성에 미치는 영향"
+    venue: "2021 한국추진공학회 춘계학술대회"
+
+  - year: 2021
+    title: "금속 3D 프린팅을 이용한 1 톤급 산소/메탄 연소기 제작"
+    venue: "2021 한국추진공학회 춘계학술대회"
+
+  - year: 2021
+    title: "Experimental Study on the Spray Characteristics of Shear Coaxial/Swirl Coaxial Injectors Manufactured by SLM Process"
+    venue: "ICLASS 2021, 15th Triennial International Conference on Liquid Atomization and Spray Systems"
+
+  - year: 2021
+    title: "기체주입식 분사기의 내부 유동 가시화 및 분무 특성"
+    venue: "2021 한국분무공학회 추계학술대회"
+
+  - year: 2021
+    title: "세 가지 다른 형태의 와류형 분사기에 대한 미립화 특성"
+    venue: "2021 한국분무공학회 추계학술대회"
+
+  - year: 2021
+    title: "상압 및 고압 조건에서의 가변추력 핀틀 분사기의 분무각에 관한 연구"
+    venue: "2021 한국분무공학회 추계학술대회"
+
+  - year: 2021
+    title: "Hot-firing tests of swirl coaxial injector manufactured by SLM process"
+    venue: "2021 Asia-Pacific International Symposium on Aerospace Technology"
+
+  - year: 2021
+    title: "스월-안정화 연소기에서 혼합기 길이가 동적 연소 특성에 미치는 영향"
+    venue: "2021 한국추진공학회 추계학술대회"
+
+  - year: 2021
+    title: "기체주입식 분사기의 내부 유동 변화에 따른 분무특성"
+    venue: "2021 한국추진공학회 추계학술대회"
+
+  - year: 2021
+    title: "가스터빈엔진 연소관 모사 조건에서의 Jet A-1 코킹시험"
+    venue: "2021 한국추진공학회 추계학술대회"
+
+  - year: 2021
+    title: "재생냉각채널 모사 환경에서의 탈황 케로신과 Jet A-1의 코킹 연구"
+    venue: "2021 한국추진공학회 추계학술대회"
+
+  - year: 2021
+    title: "전단 동축형 분사기의 리세스 유무에 따른 연소특성"
+    venue: "2021 한국추진공학회 추계학술대회"
+
+  - year: 2021
+    title: "PDPA를 이용한 와류형 분사기의 미립화 특성에 대한 실험적 연구"
+    venue: "2021 한국추진공학회 추계학술대회"
+
+  - year: 2020
+    title: "모사 재생냉각채널에서 YK-D80N 케로신의 열전달 특성에 관한 실험적 연구"
+    venue: "2020 한국항공우주학회 춘계학술대회"
+
+  - year: 2020
+    title: "모사 재생냉각채널에서의 탈황 케로신 Nusselt Number 측정"
+    venue: "2020 한국추진공학회 춘계학술대회"
+
+  - year: 2020
+    title: "전단동축형 분사기의 내부형상에 따른 분무특성"
+    venue: "2020 한국추진공학회 춘계학술대회"
+
+  - year: 2020
+    title: "400 N급 메탄엔진 연소기의 예비 연소시험"
+    venue: "2020 한국추진공학회 춘계학술대회"
+
+  - year: 2020
+    title: "3D 프린터로 제작된 동축형 분사기들의 분무특성"
+    venue: "2020 한국추진공학회 춘계학술대회"
+
+  - year: 2020
+    title: "1 kN급 메탄로켓엔진 연소시험설비의 설계 및 구축"
+    venue: "2020 한국추진공학회 춘계학술대회"
+
+  - year: 2020
+    title: "횡방향 가진이 동축형 분사기 화염반응에 미치는 영향"
+    venue: "2020 한국연소학회 추계학술대회"
+
+  - year: 2020
+    title: "금속 3D 프린팅으로 제작된 전단동축형/와류동축형 분사기들의 분무특성"
+    venue: "2020 한국분무공학회 추계학술대회"
+
+  - year: 2020
+    title: "축소형 메탄엔진 연소기를 이용한 수류시험 및 연소시험"
+    venue: "2020 한국분무공학회 추계학술대회"
+
+  - year: 2020
+    title: "모사 재생냉각채널에서의 탈황 케로신, 바이오 케로신, Jet A-1 케로신 열전달과 코킹 특성에 관한 실험적 연구"
+    venue: "2020 한국항공우주학회 추계학술대회"
+
+  - year: 2020
+    title: "액체로켓 메탄엔진 개발동향 및 시사점"
+    venue: "2020 한국추진공학회 추계학술대회"
+
+  - year: 2020
+    title: "액체/액체 핀틀 분사기의 개도에 따른 분무특성 연구"
+    venue: "2020 한국추진공학회 추계학술대회"
+
+  - year: 2020
+    title: "와류동축형 분사기에서 발생한 Self-Pulsation 현상의 주파수 분석"
+    venue: "2020 한국추진공학회 추계학술대회"
+
+  - year: 2020
+    title: "모델 가스터빈 연소기에서 스월 수가 모드 변이에 미치는 영향"
+    venue: "2020 한국추진공학회 추계학술대회"
+
+  - year: 2020
+    title: "케로신 종류별 코킹 특성에 관한 실험적 연구"
+    venue: "2020 한국추진공학회 추계학술대회"
+
+  - year: 2020
+    title: "적층가공 메탄엔진 단일분사기급 연소기의 연소시험"
+    venue: "2020 한국추진공학회 추계학술대회"
+
+  - year: 2019
+    title: "모델 연소실을 이용한 기체메탄/산소 동축 와류형 분사기의 연소안정성 평가"
+    venue: "2019 한국추진공학회 춘계학술대회"
+
+  - year: 2019
+    title: "화염전달함수 연구를 위한 모델 덤프 연소기 설계 및 예비실험 결과"
+    venue: "2019 한국추진공학회 춘계학술대회"
+
+  - year: 2019
+    title: "상압에서의 동축 전단형 분사기의 형상에 따른 분무 특성"
+    venue: "2019 한국추진공학회 춘계학술대회"
+
+  - year: 2019
+    title: "Experimental Study on Thermal Decomposition of Several Kerosene Fuels"
+    venue: "8th EUROPEAN CONFERENCE FOR AERONAUTICS AND SPACE SCIENCES"
+
+  - year: 2019
+    title: "Flame Structure and Combustion Dynamics of Bi-Swirl Coaxial injectors"
+    venue: "2019 Asia-Pacific Conference on Combustion"
+
+  - year: 2019
+    title: "기체주입 충돌제트의 미립화에 대한 실험적 연구"
+    venue: "2019 한국액체미립화학회 학술강연회"
+
+  - year: 2019
+    title: "음향적 커플링이 연소특성에 미치는 영향"
+    venue: "2019 한국연소학회 추계학술대회"
+
+  - year: 2019
+    title: "횡방향 음향가진이 단일 동축 전단 화염에 미치는 영향"
+    venue: "2019 한국추진공학회 추계학술대회"
+
+  - year: 2019
+    title: "케로신 과냉각 및 코킹 한계 연구"
+    venue: "2019 한국추진공학회 추계학술대회"
+
+  - year: 2019
+    title: "케로신 코킹현상에 대한 조사 및 분석"
+    venue: "2019 한국추진공학회 추계학술대회"
+
+  - year: 2019
+    title: "An experimental study on the spray characteristics of shear coaxial injectors"
+    venue: "20th Annual Conference on Liquid Atomization and Spray Systems - Asia"
+
+  - year: 2018
+    title: "Design and Cold-flow Test of Bi-propellant Injectors for a Moon Exploration Thruster"
+    venue: "Asian Joint Conference on Propulsion and Power 2018"
+
+  - year: 2018
+    title: "Effects of Flow Condition and Injector Geometry on Flame Structure from Bi-swirl Coaxial Injectors"
+    venue: "Asian Joint Conference on Propulsion and Power 2018"
+
+  - year: 2018
+    title: "모델 덤프 연소기에서 탄화수소 연료-공기 예혼합 화염에 스월이 미치는 영향"
+    venue: "2018 한국연소학회 춘계학술대회"
+
+  - year: 2018
+    title: "와류형 분사기에서 기체주입을 이용한 가변추력 예비연구"
+    venue: "2018 한국추진공학회 춘계학술대회"
+
+  - year: 2018
+    title: "기체 메탄과 산소를 이용한 동축 와류형 분사기에서 화염구조와 연소불안정 관계"
+    venue: "2018 한국추진공학회 춘계학술대회"
+
+  - year: 2018
+    title: "A Study on the Thrust Throttling Characteristics Using Gas Injection in Swirl Injectors"
+    venue: "2018 East Asia Innovation Accelerator Forum Korea-China-Japan Joint Symposium"
+
+  - year: 2018
+    title: "기체주입식 분사기를 이용한 아음속 횡단류로 분사되는 이유체 혼합물의 분무특성"
+    venue: "2018 한국액체미립화학회 학술강연회"
+
+  - year: 2018
+    title: "기체주입식 와류형 분사기에서의 분무특성 연구"
+    venue: "2018 한국액체미립화학회 학술강연회"
+
+  - year: 2018
+    title: "기체 메탄/산소를 이용한 동축 와류형 분사기에서의 화염 구조와 연소 동특성 연구"
+    venue: "2018 한국추진공학회 추계학술대회"
+
+  - year: 2018
+    title: "스월-안정화된 연소기에서 화염구조와 연소안정성 관계에 대한 실험적 연구"
+    venue: "2018 한국추진공학회 추계학술대회"
+
+  - year: 2018
+    title: "GLR이 기체주입식 와류형 분사기의 분무특성에 미치는 영향"
+    venue: "2018 한국추진공학회 추계학술대회"
+
+  - year: 2018
+    title: "기체주입식 충돌형 분사기의 분무 특성"
+    venue: "2018 한국추진공학회 추계학술대회"
+
+  - year: 2018
+    title: "상단용 액체로켓엔진 비교 분석"
+    venue: "2018 한국추진공학회 추계학술대회"
+
+  - year: 2017
+    title: "Effect of orifice geometry on spray characterstics of liquid jet in crossflow"
+    venue: "2017 AIAA SciTech Forum"
+
+  - year: 2017
+    title: "유동조건 및 음향가진이 화염길이 스케일링에 미치는 영향"
+    venue: "2017 한국연소학회 춘계학술대회"
+
+  - year: 2017
+    title: "모사 냉각채널을 이용한 케로신 열전달 특성에 대한 실험적 연구"
+    venue: "2017 한국추진공학회 춘계학술대회"
+
+  - year: 2017
+    title: "ANSYS FLUENT를 이용한 동축 와류형 분사기 유동특성 연구"
+    venue: "2017 한국추진공학회 춘계학술대회"
+
+  - year: 2017
+    title: "횡방향 유동에서 충돌형 분사기의 액체제트 분무 특성"
+    venue: "2017 한국추진공학회 춘계학술대회"
+
+  - year: 2017
+    title: "타원형 노즐을 이용한 횡단류 유동에서 액체제트 특성 연구"
+    venue: "2017 한국추진공학회 춘계학술대회"
+
+  - year: 2017
+    title: "An Experimental Study on Pressure Loss in Spiral Cooling Channels"
+    venue: "7th EUROPEAN CONFERENCE FOR AERONAUTICS AND SPACE SCIENCES"
+
+  - year: 2017
+    title: "Combustion instability characteristics in a dump combustor using different hydrocarbon fuels"
+    venue: "2017 ISABE Conference"
+
+  - year: 2017
+    title: "Liquid Column Trajectory in Acoustically-Modulated Crossflows"
+    venue: "ILASS-Asia 2017"
+
+  - year: 2017
+    title: "A CFD Study on the Spray Characteristics of Bi-swirl Coaxial Injectors"
+    venue: "ILASS-Asia 2017"
+
+  - year: 2017
+    title: "달탐사 추력기용 이원추진제 분사기 수치해석"
+    venue: "2017 한국추진공학회 추계학술대회"
+
+  - year: 2017
+    title: "기체 산소/메탄을 이용한 동축 와류형 분사기에서의 예비 연소실험"
+    venue: "2017 한국추진공학회 추계학술대회"
+
+  - year: 2017
+    title: "달탐사 추력기용 이원추진제 분사기 설계 및 제작"
+    venue: "2017 한국추진공학회 추계학술대회"
+
+  - year: 2017
+    title: "다양한 로켓연료에 대한 열분해 실험"
+    venue: "2017 한국추진공학회 추계학술대회"
+
+  - year: 2017
+    title: "연소실험을 위한 모델 가스터빈 연소기 설계 및 제작"
+    venue: "2017 한국추진공학회 추계학술대회"
+
+  - year: 2017
+    title: "케로신 내 용존질소 측정 및 제거 방법 연구"
+    venue: "2017 한국추진공학회 추계학술대회"
+
+  - year: 2017
+    title: "Effect of orifice geometry on spray characteristics of liquid jet in cross flow"
+    venue: "55th AIAA Aerospace Sciences Meeting"
+
+  - year: 2017
+    title: "A Study on the Characteristics of Liquid Jet in Crossflows Using Elliptical Nozzles"
+    venue: "2017 한국추진공학회 춘계학술대회"
+
+  - year: 2017
+    title: "Experimental Study on Kerosene Heat Transfer Characteristics Using Simulating Cooling Channels"
+    venue: "2017 한국추진공학회 춘계학술대회"
+
+  - year: 2017
+    title: "Flow Characteristics of Swirl-Coaxial Injectors Using ANSYS FLUENT"
+    venue: "2017 한국추진공학회 춘계학술대회"
+
+  - year: 2016
+    title: "Effects of Acoustic Forcing and Fuel Properties on Vortex-Flame Interaction in a Dump Combustor"
+    venue: "The 8th Asian Joint Conference on Propulsion and Power"
+
+  - year: 2016
+    title: "액체로켓엔진 동축 와류형 분사기에 대한 연구"
+    venue: "2016 한국액체미립화학회 워크숍"
+
+  - year: 2016
+    title: "모사 냉각채널 내 압력손실에 대한 연구"
+    venue: "2016 한국추진공학회 춘계학술대회"
+
+  - year: 2016
+    title: "발사체 연료 케로신의 질소 함유량 측정 방법 연구"
+    venue: "2016 한국추진공학회 춘계학술대회"
+
+  - year: 2016
+    title: "다양한 탄화수소 연료를 이용한 난류 예혼합 화염에서 화염길이 스케일링"
+    venue: "2016 한국추진공학회 춘계학술대회"
+
+  - year: 2016
+    title: "분사조건에 따른 동축 와류형 분사기의 유량계수 특성 연구"
+    venue: "2016 한국추진공학회 춘계학술대회"
+
+  - year: 2016
+    title: "덤프 연소기에서 다양한 연료특성에 따른 연소불안정 측정 연구"
+    venue: "2016 한국추진공학회 춘계학술대회"
+
+  - year: 2016
+    title: "아음속 유동 조건에서 분사기 형상에 따른 수직분사제트 연구"
+    venue: "2016 한국추진공학회 춘계학술대회"
+
+  - year: 2016
+    title: "유동방향에 따른 동축 와류형 분사기의 분무특성 연구"
+    venue: "2016 한국추진공학회 춘계학술대회"
+
+  - year: 2016
+    title: "횡단류 유동에서 오리피스 형상에 따른 액체 제트의 분무 특성"
+    venue: "2016 한국액체미립화학회 학술강연회"
+
+  - year: 2016
+    title: "A study on the flow characteristics of bi-swirl injectors for a thrust chamber"
+    venue: "18th Annual Conference on Liquid Atomization and Spray Systems - Asia"
+
+  - year: 2016
+    title: "Studies on swirl injectors for a liquid rocket engine"
+    venue: "Twenty-fifth Symposium (ILASS-Japan) on Atomization"
+
+  - year: 2016
+    title: "가스발생기용 동축 와류형 분사기에 대한 연구"
+    venue: "2016 한국추진공학회 추계학술대회"
+
+  - year: 2016
+    title: "냉각채널의 각도와 직경 변화에 따른 채널 내 압력 손실에 관한 수치적 연구"
+    venue: "2016 한국추진공학회 추계학술대회"
+
+  - year: 2016
+    title: "덤프 연소기에서 음향가진을 이용한 연소불안정 제어"
+    venue: "2016 한국추진공학회 추계학술대회"
+
+  - year: 2016
+    title: "발사체 연료 케로신의 질소 함유량 측정 결과 분석"
+    venue: "2016 한국추진공학회 추계학술대회"
+
+  - year: 2016
+    title: "음향가진을 이용한 횡단류 액체제트 분열특성 연구"
+    venue: "2016 한국추진공학회 추계학술대회"
+
+  - year: 2015
+    title: "Introduction to Research Topics of Advanced Propulsion and Combustion Laboratory"
+    venue: "2015 Korea-Russia Seminar on Science and Technology"
+
+  - year: 2015
+    title: "3D 프린터로 제작된 와류형 분사기의 수류시험"
+    venue: "2015 한국추진공학회 춘계학술대회"
+
+  - year: 2015
+    title: "형상 변화에 따른 캐비테이션 벤츄리의 유동 특성"
+    venue: "2015 대한기계학회 충청지회 춘계학술대회"
+
+  - year: 2015
+    title: "연소불안정 연구를 위한 모델 덤프 연소기 설계 및 해석"
+    venue: "2015 대한기계학회 충청지회 춘계학술대회"
+
+  - year: 2015
+    title: "중량 7톤급 유압브레이커의 설계 및 해석"
+    venue: "2015 대한기계학회 충청지회 춘계학술대회"
+
+  - year: 2015
+    title: "중량 13 톤급 유압브레이커의 설계 및 해석"
+    venue: "2015 대한기계학회 충청지회 춘계학술대회"
+
+  - year: 2015
+    title: "Effects of Injector Geometry on Discharge Coefficients of Bi-Swirl Coaxial Injectors"
+    venue: "6th European Conference for Aeronautics and Space Sciences"
+
+  - year: 2015
+    title: "재생냉각채널에서의 압력손실, 열전달, 케로신 열분해 특성에 대한 연구"
+    venue: "2015 한국항공우주학회/한국추진공학회 추진부문 하계 워크숍"
+
+  - year: 2015
+    title: "Study on Discharge Coefficient of Open-Type Swirl Injector"
+    venue: "13th International Conference on Liquid Atomization and Spray Systems"
+
+  - year: 2015
+    title: "다양한 연료를 이용한 덤프 연소기에서의 와류-화염 상관관계 분석"
+    venue: "2015 한국추진공학회 추계학술대회"
+
+  - year: 2015
+    title: "3D 프린터로 제작된 Close-type 와류형 분사기의 분무 특성에 관한 연구"
+    venue: "2015 한국추진공학회 추계학술대회"
+
+  - year: 2015
+    title: "냉각채널 형상과 유동조건에 다른 냉각채널 내 압력손실에 관한 연구"
+    venue: "2015 한국추진공학회 추계학술대회"
+
+  - year: 2015
+    title: "덤프 연소기에서의 유동 및 음향 조건에 따른 화염특성 연구"
+    venue: "2015 한국추진공학회 추계학술대회"
+
+  - year: 2014
+    title: "냉각채널을 갖는 축소형 연소기에서의 열전달 특성"
+    venue: "2014 한국추진공학회 춘계학술대회"
+
+  - year: 2014
+    title: "DNHI 중형 유압브레이커 개발"
+    venue: "2014 한국산학기술학회 춘계학술대회"
+
+  - year: 2014
+    title: "Close-type 와류형 분사기의 유량계수에 대한 연구"
+    venue: "2014 한국액체미립화학회 학술강연회"
+
+  - year: 2014
+    title: "Experimental Study on Discharge Coefficient of Swirl Injector"
+    venue: "17th Annual Conference on Liquid Atomization and Spray Systems - Asia"
+
+  - year: 2014
+    title: "3D 프린팅된 분사기의 유용성 확인을 위한 직교류 채널 수직분사실험 설계"
+    venue: "2014 한국추진공학회 추계학술대회"
+
+  - year: 2014
+    title: "연소불안정 및 능동제어 연구를 위한 모델 덤프 연소기 설계"
+    venue: "2014 한국추진공학회 추계학술대회"
+
+  - year: 2013
+    title: "Cavitating venturi를 이용한 유량공급 특성에 관한 연구"
+    venue: "2013 한국추진공학회 춘계학술대회"
+
+  - year: 2013
+    title: "7톤급 연소기 재생냉각 연소실 설계, 해석 및 제작"
+    venue: "2013 한국추진공학회 춘계학술대회"
+
+  - year: 2013
+    title: "축소형 연소기에서의 연소불안정과 열전달"
+    venue: "2013 한국추진공학회 춘계학술대회"
+
+  - year: 2013
+    title: "7톤 모델 연소실에서의 펄스건 기폭시험"
+    venue: "2013 한국추진공학회 추계학술대회"
+
+  - year: 2012
+    title: "Assessing the sustenance and evolution of social and cultural contexts with sustainable urban development"
+    venue: "The Sustainable City VII"
+
+  - year: 2012
+    title: "Comparison of Dynamic Hardening Equations for Metallic Materials with three types of Crystalline Structures"
+    venue: "5th International Conference on High Speed Forming"
+
+  - year: 2007
+    title: "Spray Plume Characteristics of Liquid Jets in Subsonic Crossflows"
+    venue: "43rd AIAA/ASME/SAE/ASEE Joint Propulsion Conference & Exhibit"
+
+  - year: 2004
+    title: "Regeneration inverter for DC electric traction system with the capability of reduction of harmonic"
+    venue: "International Conference on Performance Engineering"
+
+  - year: 2003
+    title: "Effect of Cavitation on Transverse Injection into Subsonic Crossflows"
+    venue: "39th AIAA/ASME/SAE/ASEE Joint Propulsion Conference and Exhibit"
+
+  - year: 2001
+    title: "Flow Characteristics of Liquid Ramjet using Two Color PIV"
+    venue: "Korea-Japan Joint Seminar on Particle Image Velocimetry"
